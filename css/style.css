@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap");
+
+/* Define um estilo base para todos os elementos da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxanium", cursive;
+}
+
+/* Estilo para a logo do Pokémon */
+.logo_pokemon {
+  height: 60px;
+}
+
+/* Estilo para o cabeçalho (header) */
+header {
+  background: transparent;
+  width: 100%;
+  top: 0;
+  padding: 1rem;
+}
+
+/* Estilo para a logo da Pokédex */
+.logo_pokedex {
+  height: 70px;
+}
+
+/* Estilo para os itens da lista de navegação no cabeçalho */
+nav ul li {
+  margin-left: 1rem;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+  text-align: center;
+  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  min-height: 100vh; /* Define a altura mínima da página como a altura da viewport */
+}
+
+/* Estilos gerais para o conteúdo principal */
+main {
+  display: inline-block;
+  margin-top: 1%;
+  padding: 15px;
+  position: relative;
+}
+
+/* Estilo para a imagem da Pokédex */
+.pokedex {
+  width: 100%;
+  max-width: 425px;
+}
+
+/* Estilo para a imagem do Pokémon */
+.pokemon_image {
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-63%, 20%);
+  height: 18%;
+}
+
+/* Estilo para os dados do Pokémon */
+.pokemonData {
+  position: absolute;
+  font-weight: 600;
+  color: #aaa;
+  top: 54.5%;
+  right: 27%;
+  font-size: clamp(8px, 5vw, 25px); /* Responsivo: tamanho de fonte variável */
+}
+
+/* Estilo para o nome do Pokémon */
+.pokemon_name {
+  color: #3a444d;
+  text-transform: capitalize; /* Transforma o texto em maiúsculas na primeira letra de cada palavra */
+}
+
+/* Estilo para o formulário de pesquisa */
+.form {
+  position: absolute;
+  width: 65%;
+  top: 65%;
+  left: 13.5%;
+}
+
+/* Estilo para a caixa de pesquisa */
+.input_search {
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+/* Estilo para os botões de navegação */
+.buttons {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+
+/* Estilo para os botões */
+.button {
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+/* Estilo para o botão quando pressionado */
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
+
+/* Estilos gerais para o rodapé */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilo para as imagens no rodapé */
+.style_image {
+  height: 30px;
+  vertical-align: middle; /* Alinha verticalmente as imagens com o texto */
+  margin-right: 5px;
+}
+
+/* Estilos para o rodapé em geral */
+footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  margin-top: 1.5%;
+}
+
+/* Estilos para a lista não ordenada no rodapé */
+footer ul {
+  list-style-type: none;
+}
+
+/* Estilos para os itens da lista no rodapé */
+footer ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+  font-size: 20px;
+}
+
+/* Estilos para os links no rodapé */
+footer ul li a {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Estilos para o sublinhado dos links no rodapé */
+footer ul li a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.2s ease-in-out;
+}
+
+/* Estilos para o sublinhado dos links no rodapé quando passam o mouse por cima */
+footer ul li a:hover::after {
+  width: 100%;
+}
+
+/* Estilos responsivos para telas menores (max-width: 399px) */
+@media (max-width: 399px) {
+  footer ul {
+    margin: 5px 0;
+  }
+}
+
+/* Estilos responsivos para telas médias (max-width: 1321px) */
+@media (max-width: 1321px) {
+  footer ul {
+    margin: 5px 0;
+  }
+}
